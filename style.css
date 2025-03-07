@@ -1,0 +1,172 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dd6a1eef;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color:  #dd6a1eef;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons i {
+    font-size: 22px;
+    cursor: pointer;
+}
+.hero-section {
+    background: url('img/sublime\ service.jpg') center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+.hero-section .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+@media (max-width : 768px) {
+    .hero-section {
+        height: 50vh;
+        padding: 10px;
+    }
+    .hero-section h1{
+        font-size: 30px;
+    }
+    .hero-section p{
+        font-size: 16px;
+    }
+}
+.h2 {
+    margin-bottom: 20px;
+}
+
+.services img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.about-section {
+    background: url('images/about.jpg') center/cover;
+    padding: 80px 20px;
+}
+
+
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+ 
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+}
+
+
+.mobile-menu {
+    position: fixed;
+    top: 60px;
+    right: -250px;
+    width: 200px;
+    background-color: white;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin: 15px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
